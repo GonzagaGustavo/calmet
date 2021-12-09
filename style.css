@@ -12,7 +12,7 @@ input {
 p {
     font-size: 20px;
 }
-#tudo {
+* {
     text-align: center;
 }
 button {
@@ -23,8 +23,7 @@ button {
     border: rgb(155, 155, 155) solid 2px;
     border-radius: 15px;
 }
-#result {
-    border: black solid 10px;
+div {
     display: grid;
     place-items: center;
     border-radius: 30px;

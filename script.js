@@ -1,31 +1,18 @@
-const demo = document.getElementById("demo")
-const inpeso = document.getElementById("peso")
-const inaltura = document.getElementsByClassName("altura")
-const inidade = document.getElementsByClassName("idade")
+let result;
+function croacia() {
+    let peso = document.getElementById("peso").value
+    let altura = document.getElementById("altura").value
+    let idade = document.getElementById("idade").value
 
-    let p;
-    var a;
-    var i;
-    p = inpeso.value
-    a = inaltura.value
-    i = inidade.value
-function calcular() {
-   // p.push(inpeso.value)
-  //  a.push(inaltura.value)
-  //  i.push(inidade.value)
-  p = inpeso.value
-  a = inaltura.value
-  i = inidade.value
-    inpeso.value = ""
-    inaltura.value = ""
-    inidade.value = ""
+    peso = peso * 13.75
+    altura = altura * 5
+    idade = idade * 6.8
     
+    result = peso + altura - idade + 66.5
+    console.log(result)
     render()
 }
+
 function render() {
-    let calp = p = 13.75 * p
-    let cala = a = 5 * a
-    let cali = i = 6.8 * i
-    let calresult  = calp + cala - cali + 66.5
-    demo.innerHTML = calresult
+    document.getElementById("mostrar").innerHTML = result + " calorias diárias"
 }

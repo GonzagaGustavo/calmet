@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcular Metabolismo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcule sue Metabolismo!</title>
+  <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <h1>Calcule o seu Metabolismo</h1>
-<div id="tudo">
-    <p>Peso:</p>
-      <input type="text" id="peso">
-    <p>Altura:</p> 
-      <input type="text" id="altura">
-    <p>Idade:</p>
-    <input type="text" id="idade"><br>
-    <button onclick="calcular()">Calcular</button>
-  <div id="result">
-    <p id="demo"></p>
-    </div>
-    </div>
-    <script src="script.js"></script>
+  <div>
+  <h1>Calcule o seu Metabolismo</h1>
+  <p>Peso</p>
+  <input type="text" id="peso" maxlength="3" placeholder="Em kg">
+  <p>Altura</p>
+  <input type="text" id="altura"   maxlength="3" placeholder="Em centímetros" >
+  <p>Idade</p>
+  <input type="text" id="idade" maxlength="3" placeholder="Em anos">
+  <button onclick="croacia()">Calcular</button>
+  <p id="mostrar"></p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
