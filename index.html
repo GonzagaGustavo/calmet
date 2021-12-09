@@ -11,18 +11,27 @@
   <div class="">
   <h1>Calcule o seu Metabolismo</h1>
   <p>Peso</p>
-  <input id="peso"
+  <input id="peso" placeholder="Em kg"
 oninput="maxLengthCheck(this)"
 type = "number"
 maxlength = "3"
 min = "1"
-max = "999" 
-id="peso"/>
+max = "999"/>
 
   <p>Altura</p>
-  <input type="text" id="altura"   maxlength="3" placeholder="Em centímetros" >
+  <input  id="altura" placeholder="Em centímetros"
+  oninput="maxLengthCheck(this)"
+  type = "number"
+  maxlength = "3"
+  min = "1"
+  max = "999"/>
   <p>Idade</p>
-  <input type="text" id="idade" maxlength="3" placeholder="Em anos">
+  <input  id="idade" placeholder="Em anos"
+  oninput="maxLengthCheck(this)"
+  type = "number"
+   maxlength = "3"
+  min = "1"
+  max = "999"><br>
   <button onclick="croacia()">Calcular</button>
   <p id="mostrar"></p>
   </div>
