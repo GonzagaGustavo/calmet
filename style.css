@@ -1,5 +1,5 @@
 body {
-    background-color: #444;
+    background-color: rgb(102, 132, 146);
 }
 h1 {
     text-align: center;
@@ -24,7 +24,7 @@ button {
     border-radius: 15px;
 }
 div {
-    display: grid;
-    place-items: center;
-    border-radius: 30px;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(50deg,black, rgb(55, 181, 190));
 }
