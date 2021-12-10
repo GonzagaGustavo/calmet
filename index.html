@@ -36,5 +36,12 @@ max = "999"/>
   <p id="mostrar"></p>
   </div>
   <script src="script.js"></script>
+<script>
+    function maxLengthCheck(object)
+    {
+      if (object.value.length > object.maxLength)
+        object.value = object.value.slice(0, object.maxLength)
+    }
+</script>
 </body>
 </html>
