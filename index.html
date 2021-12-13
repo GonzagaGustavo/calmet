@@ -4,19 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calcule sue Metabolismo!</title>
+  <title>Calcule seu Metabolismo!</title>
+  <link rel="shortcut icon" href="TMB.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-  <div class="">
-  <h1>Calcule o seu Metabolismo</h1>
+  <a href="index.html" id="a">
+      <div id="hm">
+    <p>Homens</p>
+    </div>
+    </a>
+    <a href="index2.html">
+      <div id="mh">
+    <p>Mulheres</p>
+  </div>
+  </a>
+  <div id="tudo">
+  <h1>Calcule o seu Metabolismo (Homens)</h1>
   <p>Peso</p>
   <input id="peso" placeholder="Em kg"
 oninput="maxLengthCheck(this)"
 type = "number"
-maxlength = "3"
+maxlength = "5"
 min = "1"
-max = "999"/>
+max = "99999"/>
 
   <p>Altura</p>
   <input  id="altura" placeholder="Em centímetros"
@@ -35,10 +46,9 @@ max = "999"/>
   <button onclick="croacia()">Calcular</button>
   <p id="mostrar"></p>
   </div>
-  <script src="script.js"></script>
+  <script src="man.js"></script>
 <script>
-    function maxLengthCheck(object)
-    {
+    function maxLengthCheck(object) {
       if (object.value.length > object.maxLength)
         object.value = object.value.slice(0, object.maxLength)
     }

@@ -23,7 +23,7 @@ button {
     border: rgb(155, 155, 155) solid 2px;
     border-radius: 15px;
 }
-div {
+#tudo {
    
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(50deg,black, rgb(55, 181, 190));
@@ -36,4 +36,26 @@ div {
 }
 #peso {
     width: 30vh;
+}
+#hm {
+    background-color: rgb(29, 128, 128);
+    display: inline-block;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    width: 160px;
+    border: solid 2px rgb(29, 128, 128);
+    border-radius: 20px;
+}
+#mh {
+    background-color: rgb(29, 128, 128);
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    width: 160px;
+    border: solid 2px rgb(29, 128, 128);
+    border-radius: 20px;
+    margin: 3px;
+}
+a {
+    color: rgba(0, 0, 0, 0);
 }

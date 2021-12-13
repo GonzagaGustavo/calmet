@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule o seu Metabolismo!</title>
+    <link rel="shortcut icon" href="TMB.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="index.html" id="a">
+    <div id="hm">
+  <p>Homens</p>
+  </div>
+  </a>
+  <a href="index2.html">
+    <div id="mh">
+  <p>Mulheres</p>
+</div>
+</a>
+      <div id="tudo">
+      <h1>Calcule o seu Metabolismo (Mulher)</h1>
+      <p>Peso</p>
+      <input id="peso" placeholder="Em kg"
+    oninput="maxLengthCheck(this)"
+    type = "number"
+    maxlength = "5"
+    min = "1"
+    max = "99999"/>
+    
+      <p>Altura</p>
+      <input  id="altura" placeholder="Em centímetros"
+      oninput="maxLengthCheck(this)"
+      type = "number"
+      maxlength = "3"
+      min = "1"
+      max = "999"/>
+      <p>Idade</p>
+      <input  id="idade" placeholder="Em anos"
+      oninput="maxLengthCheck(this)"
+      type = "number"
+       maxlength = "3"
+      min = "1"
+      max = "999"><br>
+      <button onclick="croacia()">Calcular</button>
+      <p id="mostrar"></p>
+      </div>
+      <script src="woman.js"></script>
+    <script>
+        function maxLengthCheck(object)
+        {
+          if (object.value.length > object.maxLength)
+            object.value = object.value.slice(0, object.maxLength)
+        }
+    </script>
+</body>
+</html>

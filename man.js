@@ -10,6 +10,9 @@ function croacia() {
     
     result = peso + altura - idade + 66.5
     console.log(result)
+    if(peso == "") {
+        document.getElementById("mostrar").innerHTML = "Faltou os valores!"
+    }
     if(peso != "")
     render()
 }
