@@ -10,9 +10,14 @@ function croacia() {
     
     result = peso + altura - idade + 66.5
     console.log(result)
+    if(peso != "")
     render()
 }
 
 function render() {
+    peso.value = ""
+    altura.value = ""
+    idade.value = ""
+
     document.getElementById("mostrar").innerHTML = result + " calorias diárias"
 }
