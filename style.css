@@ -11,6 +11,7 @@ input {
 }
 p {
     font-size: 20px;
+    color: white;
 }
 * {
     text-align: center;
